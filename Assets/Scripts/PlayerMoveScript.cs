@@ -15,6 +15,8 @@ public class PlayerMoveScript : MonoBehaviour
     public bool isGrounded;
     public Transform floorCheck;
     public LayerMask floorLayers;
+    public AudioClip jumpSound;
+    public AudioClip hitSound;
 
     private Rigidbody2D rb;
 
@@ -39,6 +41,7 @@ public class PlayerMoveScript : MonoBehaviour
         if (Input.GetAxis("Jump") > 0 && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            AudioSource.PlayClipAtPoint(jumpSound, transform.position, 1f);
         }
     }
 
@@ -50,6 +53,7 @@ public class PlayerMoveScript : MonoBehaviour
 
 
             health -= damageValue;
+            AudioSource.PlayClipAtPoint(hitSound, transform.position, 1f);
             healthText.text = "Health: " + health + "/3";
             Debug.Log("Player Health: " + health);
 

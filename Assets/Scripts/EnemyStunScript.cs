@@ -6,11 +6,14 @@ public class EnemyStunScript : MonoBehaviour
 {
     public Transform EnemyStun;
 
-   private void OnTriggerEnter2D(Collider2D collision)
+    public AudioClip stunSound;
+
+    private void OnTriggerEnter2D(Collider2D collision)
    {
        if (collision.gameObject.CompareTag("Player"))
        {
             gameObject.GetComponent<EnemyWalkerScript>().Stun();
+            AudioSource.PlayClipAtPoint(stunSound, transform.position, 1f);
             collision.gameObject.GetComponent<PlayerMoveScript>().Bounce();
         }
     }

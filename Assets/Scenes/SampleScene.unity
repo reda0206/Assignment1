@@ -2278,6 +2278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Police Officer (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5317950725855746721, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
       propertyPath: speed
       value: 5
@@ -2338,6 +2342,10 @@ PrefabInstance:
     - target: {fileID: 2429855094494095217, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
       propertyPath: m_Name
       value: Police Officer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2813,6 +2821,10 @@ PrefabInstance:
     - target: {fileID: 2429855094494095217, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
       propertyPath: m_Name
       value: Police Officer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3447,6 +3459,10 @@ PrefabInstance:
     - target: {fileID: 2429855094494095217, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
       propertyPath: m_Name
       value: Police Officer (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4820,6 +4836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Police Officer (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5317950725855746721, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
       propertyPath: speed
       value: 10
@@ -5013,6 +5033,8 @@ MonoBehaviour:
   floorLayers:
     serializedVersion: 2
     m_Bits: 8
+  jumpSound: {fileID: 8300000, guid: 396860e86aa78d8459cd8d41f3c310a1, type: 3}
+  hitSound: {fileID: 8300000, guid: a0ab1d93e3c5c5f4cb4be942e9653812, type: 3}
 --- !u!1001 &1404000028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5343,7 +5365,7 @@ Transform:
   m_GameObject: {fileID: 1458509450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.205, z: 0}
+  m_LocalPosition: {x: 0, y: 0.205, z: -1}
   m_LocalScale: {x: 0.6, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6065,6 +6087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Police Officer
       objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5317950725855746721, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
       propertyPath: speed
       value: 3
@@ -6466,6 +6492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Police Officer (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3801976656393597350, guid: 594909e002c647b4a8002a3b4ed3c6e2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6627,6 +6657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: {fileID: 1162768718}
+  keyCollectSound: {fileID: 8300000, guid: 12dcf6b6f952628439c9d4a304d73c59, type: 3}
 --- !u!1001 &1851501256
 PrefabInstance:
   m_ObjectHideFlags: 0
