@@ -10,6 +10,11 @@ public class ButtonsMainMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void CreditsButton()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
+
     public void QuitButton()
     {
         Application.Quit();
